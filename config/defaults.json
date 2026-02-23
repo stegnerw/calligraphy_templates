@@ -1,0 +1,6 @@
+{
+  "paper": "letter",
+  "orientation": "portrait",
+  "style": "default",
+  "margins": { "all": 0 }
+}
