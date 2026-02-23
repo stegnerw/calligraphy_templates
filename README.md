@@ -12,15 +12,16 @@ calligraphy_templates/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-├── template.tex                # Parameterized document generation logic
-├── nibs.tex                    # Nib sizes based on physical measurements
+├── template.py                 # Parameterized document generation logic
+├── nibs.json                   # Nib sizes based on physical measurements
+├── profiles.json               # Profiles for various fonts
 ├── practice/                   # Generic templates with repeated guidelines
-│   ├── foundational-c3.tex
-│   ├── foundational-c5.tex
-│   ├── gothic-c3.tex
+│   ├── foundational-c3.json
+│   ├── foundational-c5.json
+│   ├── gothic-c3.json
 │   └── ...
 └── projects/                   # Bespoke templates for specific projects
-    ├── certificate-gothic.tex
-    ├── certificate-italic.tex
+    ├── certificate-gothic.json
+    ├── certificate-italic.json
     └── ...
 ```
