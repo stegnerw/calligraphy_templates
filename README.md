@@ -13,8 +13,7 @@ calligraphy_templates/
 ├── LICENSE
 ├── .gitignore
 ├── template.py                 # Parameterized document generation logic
-├── nibs.json                   # Nib sizes based on physical measurements
-├── profiles.json               # Profiles for various fonts
+├── config/                     # Various common configs
 ├── practice/                   # Generic templates with repeated guidelines
 │   ├── foundational-c3.json
 │   ├── foundational-c5.json
