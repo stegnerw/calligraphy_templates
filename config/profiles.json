@@ -1,0 +1,5 @@
+{
+  "gothic": { "x_height": 4, "ascender": 2, "descender": 2, "spacing": 2 },
+  "italic": { "x_height": 5, "ascender": 3, "descender": 3, "spacing": 2 },
+  "foundational": { "x_height": 4.5, "ascender": 3, "descender": 3, "spacing": 2 }
+}
