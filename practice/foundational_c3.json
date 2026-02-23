@@ -1,0 +1,16 @@
+{
+  "_comment": "Foundational Hand practice sheet — Speedball C-3",
+  "title": "Foundational Hand — C-3 (1.875mm)",
+  "paper": "letter",
+  "orientation": "portrait",
+  "margins": {
+    "all": 254
+  },
+  "zones": [
+    {
+      "nib": "speedball_c3",
+      "profile": "foundational",
+      "repeat": "fill"
+    }
+  ]
+}
