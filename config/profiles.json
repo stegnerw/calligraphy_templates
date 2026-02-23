@@ -1,5 +1,52 @@
 {
-  "gothic": { "x_height": 4, "ascender": 2, "descender": 2, "spacing": 2 },
-  "italic": { "x_height": 5, "ascender": 3, "descender": 3, "spacing": 2 },
-  "foundational": { "x_height": 4.5, "ascender": 3, "descender": 3, "spacing": 2 }
+  "_comment": "Script proportions — body_height and spacing in nib-widths. Guides are optional extra lines.",
+  "foundational": {
+    "body_height": 4,
+    "ascender": 3,
+    "descender": 3,
+    "spacing": 2,
+    "guides": [
+      {
+        "label": "capital_height",
+        "position": 2,
+        "from": "waistline"
+      },
+      {
+        "label": "numeral_height",
+        "position": 2,
+        "from": "waistline"
+      },
+      {
+        "label": "numeral_depth",
+        "position": 2,
+        "from": "baseline"
+      }
+    ]
+  },
+  "gothic": {
+    "body_height": 4,
+    "ascender": 2,
+    "descender": 2,
+    "spacing": 1
+  },
+  "italic": {
+    "body_height": 5,
+    "ascender": 3,
+    "descender": 3,
+    "spacing": 2,
+    "guides": [
+      {
+        "label": "branch_line",
+        "position": 0.5,
+        "from": "body",
+        "unit": "fraction"
+      }
+    ]
+  },
+  "carolingian": {
+    "body_height": 4,
+    "ascender": 6,
+    "descender": 6,
+    "spacing": 3
+  }
 }

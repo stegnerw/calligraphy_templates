@@ -1,11 +1,35 @@
 {
+  "_comment": "Line styles - weight in mm, color in grayscale (0=black, 1=white)",
   "default": {
-    "baseline": { "weight": 0.4, "color": 0.0, "layer": 50 },
-    "x_height": { "weight": 0.4, "color": 0.0, "layer": 50 },
-    "ascender": { "weight": 0.2, "color": 0.5, "layer": 30 },
-    "descender": { "weight": 0.2, "color": 0.5, "layer": 30 },
-    "slant": { "weight": 0.1, "color": 0.7, "layer": 10 },
-    "midline": { "weight": 0.1, "color": 0.7, "layer": 20 },
-    "margin": { "weight": 1.2, "color": 0.0, "layer": 60 }
+    "waistline": {
+      "weight": 0.15,
+      "color": 0.0,
+      "layer": 50
+    },
+    "baseline": {
+      "weight": 0.15,
+      "color": 0.0,
+      "layer": 50
+    },
+    "ascender": {
+      "weight": 0.08,
+      "color": 0.5,
+      "layer": 30
+    },
+    "descender": {
+      "weight": 0.08,
+      "color": 0.5,
+      "layer": 30
+    },
+    "guide": {
+      "weight": 0.05,
+      "color": 0.6,
+      "layer": 20
+    },
+    "margin": {
+      "weight": 0.4,
+      "color": 0.0,
+      "layer": 60
+    }
   }
 }

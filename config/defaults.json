@@ -1,6 +1,10 @@
 {
+  "_comment": "Global defaults - overridden by sheet configs",
   "paper": "letter",
   "orientation": "portrait",
   "style": "default",
-  "margins": { "all": 0 }
+  "spacing": 1,
+  "margins": {
+    "all": 0
+  }
 }
