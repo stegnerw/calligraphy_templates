@@ -9,7 +9,7 @@
   "zones": [
     {
       "nib": "speedball_c3",
-      "profile": "foundational",
+      "hand": "foundational",
       "repeat": "fill"
     }
   ]

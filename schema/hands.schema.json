@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Profiles",
+  "title": "Hands",
   "description": "Script proportions - body height and spacing in nib-widths.",
   "type": "object",
   "properties": {

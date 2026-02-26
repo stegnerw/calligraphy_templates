@@ -1,5 +1,5 @@
 {
-  "_comment": "See schema/profiles.schema.json",
+  "_comment": "See schema/hands.schema.json",
   "foundational": {
     "body_height": 4,
     "ascender": 3,
