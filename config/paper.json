@@ -1,5 +1,5 @@
 {
-  "_comment": "Paper dimensions in mm",
+  "_comment": "See schema/paper.schema.json",
   "letter": {
     "width": 215.9,
     "height": 279.4

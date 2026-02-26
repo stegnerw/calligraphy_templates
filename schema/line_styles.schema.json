@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Line Styles",
+  "description": "Line styles for different line types",
+  "type": "object",
+  "properties": {
+    "_comment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "_comment": {
+        "type": "string"
+      },
+      "baseline": {
+        "$ref": "#/$defs/line_style"
+      },
+      "waistline": {
+        "$ref": "#/$defs/line_style"
+      },
+      "ascender": {
+        "$ref": "#/$defs/line_style"
+      },
+      "descender": {
+        "$ref": "#/$defs/line_style"
+      },
+      "guide": {
+        "$ref": "#/$defs/line_style"
+      },
+      "margin": {
+        "$ref": "#/$defs/line_style"
+      }
+    },
+    "required": [
+      "baseline",
+      "waistline",
+      "ascender",
+      "descender",
+      "guide",
+      "margin"
+    ],
+    "additionalProperties": false
+  },
+  "$defs": {
+    "line_style": {
+      "type": "object",
+      "properties": {
+        "weight": {
+          "description": "Line weight in mm",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "color": {
+          "description": "Grayscale value (0=black, 1=white)",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "layer": {
+          "description": "Drawing order - higher values drawn on top",
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "weight",
+        "color",
+        "layer"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

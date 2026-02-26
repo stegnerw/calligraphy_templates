@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Defaults",
+  "description": "Default values for template generation",
+  "type": "object",
+  "properties": {
+    "_comment": {
+      "type": "string"
+    },
+    "paper": {
+      "description": "Paper size, defined in config/paper.json",
+      "type": "string"
+    },
+    "orientation": {
+      "description": "Orientation of the paper",
+      "enum": [
+        "portrait",
+        "landscape",
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "line_style": {
+      "description": "Line styles profile, defined in config/line_styles.json",
+      "type": "string"
+    },
+    "spacing": {
+      "description": "Spacing (in body heights) from baseline to waistline",
+      "type": "number"
+    },
+    "margins": {
+      "description": "Margin size in mm",
+      "type": "object",
+      "properties": {
+        "all": {
+          "description": "Size of all margins - can be overridden per side",
+          "type": "number",
+          "minimum": 0
+        },
+        "top": {
+          "description": "Size of the top margin",
+          "type": "number",
+          "minimum": 0
+        },
+        "bottom": {
+          "description": "Size of the bottom margin",
+          "type": "number",
+          "minimum": 0
+        },
+        "left": {
+          "description": "Size of the left margin",
+          "type": "number",
+          "minimum": 0
+        },
+        "right": {
+          "description": "Size of the right margin",
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "all"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "paper",
+    "orientation",
+    "line_style",
+    "spacing",
+    "margins"
+  ],
+  "additionalProperties": false
+}

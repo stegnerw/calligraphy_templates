@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Profiles",
+  "description": "Script proportions - body height and spacing in nib-widths.",
+  "type": "object",
+  "properties": {
+    "_comment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "body_height": {
+        "description": "Space between baseline and waistline - x-height",
+        "type": "number",
+        "exclusiveMinimum": 0
+      },
+      "ascender": {
+        "description": "Distance of the ascender above the waistline",
+        "type": "number",
+        "minimum": 0
+      },
+      "descender": {
+        "description": "Distance of the descender below the baseline",
+        "type": "number",
+        "minimum": 0
+      },
+      "spacing": {
+        "description": "Spacing (in body heights) from baseline to waistline",
+        "type": "number",
+        "minimum": 0
+      },
+      "guides": {
+        "description": "Additional guidelines to assist alignment",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "description": "Label of the guide line",
+              "type": "string"
+            },
+            "position": {
+              "description": "Offset from reference - negative = into body",
+              "type": "number"
+            },
+            "reference": {
+              "description": "Reference point from which to draw the guide",
+              "enum": [
+                "baseline",
+                "waistline"
+              ]
+            },
+            "unit": {
+              "description": "Unit of measurement - default nib",
+              "enum": [
+                "nib",
+                "body"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "position",
+            "reference"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "body_height"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_comment": "Line styles - weight in mm, color in grayscale (0=black, 1=white)",
+  "_comment": "See schema/line_styles.schema.json",
   "default": {
     "waistline": {
       "weight": 0.15,

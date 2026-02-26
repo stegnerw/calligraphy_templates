@@ -1,8 +1,8 @@
 {
-  "_comment": "Global defaults - overridden by sheet configs",
+  "_comment": "See schema/defaults.schema.json",
   "paper": "letter",
   "orientation": "portrait",
-  "style": "default",
+  "line_style": "default",
   "spacing": 1,
   "margins": {
     "all": 0

@@ -1,5 +1,5 @@
 {
-  "_comment": "Nib stroke widths in mm - measured from actual tools",
+  "_comment": "See schema/nibs.schema.json",
   "speedball_c3": 1.875,
   "speedball_c5": 0.875
 }

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nibs",
+  "description": "Nib stroke widths in mm - measured from actual tools",
+  "type": "object",
+  "properties": {
+    "_comment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "number",
+    "exclusiveMinimum": 0
+  }
+}

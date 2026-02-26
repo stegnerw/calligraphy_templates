@@ -1,5 +1,5 @@
 {
-  "_comment": "Script proportions — body_height and spacing in nib-widths. Guides are optional extra lines.",
+  "_comment": "See schema/profiles.schema.json",
   "foundational": {
     "body_height": 4,
     "ascender": 3,
@@ -9,17 +9,17 @@
       {
         "label": "capital_height",
         "position": 2,
-        "from": "waistline"
+        "reference": "waistline"
       },
       {
         "label": "numeral_height",
         "position": 2,
-        "from": "waistline"
+        "reference": "waistline"
       },
       {
         "label": "numeral_depth",
         "position": 2,
-        "from": "baseline"
+        "reference": "baseline"
       }
     ]
   },
@@ -37,9 +37,9 @@
     "guides": [
       {
         "label": "branch_line",
-        "position": 0.5,
-        "from": "body",
-        "unit": "fraction"
+        "position": -0.5,
+        "reference": "waistline",
+        "unit": "body"
       }
     ]
   },

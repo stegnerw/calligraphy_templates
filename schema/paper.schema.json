@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paper",
+  "description": "Paper dimensions in mm",
+  "type": "object",
+  "properties": {
+    "_comment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "width": {
+        "description": "Width of the paper",
+        "type": "number",
+        "exclusiveMinimum": 0
+      },
+      "height": {
+        "description": "Height of the paper",
+        "type": "number",
+        "exclusiveMinimum": 0
+      }
+    },
+    "required": [
+      "width",
+      "height"
+    ],
+    "additionalProperties": false
+  }
+}
