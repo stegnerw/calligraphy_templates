@@ -47,31 +47,19 @@
             },
             "reference": {
               "description": "Reference point from which to draw the guide",
-              "enum": [
-                "baseline",
-                "waistline"
-              ]
+              "enum": ["baseline", "waistline"]
             },
             "unit": {
               "description": "Unit of measurement - default nib",
-              "enum": [
-                "nib",
-                "body"
-              ]
+              "enum": ["nib", "body"]
             }
           },
-          "required": [
-            "label",
-            "position",
-            "reference"
-          ],
+          "required": ["label", "position", "reference"],
           "additionalProperties": false
         }
       }
     },
-    "required": [
-      "body_height"
-    ],
+    "required": ["body_height"],
     "additionalProperties": false
   }
 }

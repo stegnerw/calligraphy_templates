@@ -64,11 +64,7 @@
           "minimum": 0
         }
       },
-      "required": [
-        "weight",
-        "color",
-        "layer"
-      ],
+      "required": ["weight", "color", "layer"],
       "additionalProperties": false
     }
   }

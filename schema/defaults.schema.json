@@ -13,12 +13,7 @@
     },
     "orientation": {
       "description": "Orientation of the paper",
-      "enum": [
-        "portrait",
-        "landscape",
-        "vertical",
-        "horizontal"
-      ]
+      "enum": ["portrait", "landscape", "vertical", "horizontal"]
     },
     "line_style": {
       "description": "Line styles profile, defined in config/line_styles.json",
@@ -58,18 +53,10 @@
           "minimum": 0
         }
       },
-      "required": [
-        "all"
-      ],
+      "required": ["all"],
       "additionalProperties": false
     }
   },
-  "required": [
-    "paper",
-    "orientation",
-    "line_style",
-    "spacing",
-    "margins"
-  ],
+  "required": ["paper", "orientation", "line_style", "spacing", "margins"],
   "additionalProperties": false
 }

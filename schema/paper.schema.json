@@ -22,10 +22,7 @@
         "exclusiveMinimum": 0
       }
     },
-    "required": [
-      "width",
-      "height"
-    ],
+    "required": ["width", "height"],
     "additionalProperties": false
   }
 }
